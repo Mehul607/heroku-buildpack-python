@@ -25,7 +25,7 @@ if (grep -iq -e "scikit-learn" setup.py) then
       export LAPACK=$(pwd)/vendor/lib/atlas-base/atlas/liblapack.a
       export ATLAS=$(pwd)/vendor/lib/atlas-base/libatlas.a
       export LIBRARY_PATH=$(pwd)/vendor/lib:$(pwd)/lib/atlas-base:$(pwd)/lib/atlas-base/atlas
-      export LD_LIBRARY_PATH=$(pwd)/vendor/lib:$(pwd)/lib/atlas-base:$(pwd)/lib/atlas-base/atlas:$(pwd)/vendor/lib/atlas-base/atlas
+      export LD_LIBRARY_PATH=$(pwd)/vendor/lib:$(pwd)/vendor/lib/atlas-base:$(pwd)/vendor/lib/atlas-base/atlas
 
       pip install --use-mirrors scikit-learn
     fi
