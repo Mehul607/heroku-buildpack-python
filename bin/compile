@@ -50,7 +50,7 @@ PIP_DOWNLOAD_CACHE=${PIP_DOWNLOAD_CACHE:-$CACHE_DIR/pip_downloads}
 
 # Static configurations for virtualenv caches.
 LEGACY_VIRTUALENV_LOC="."
-MODERN_VIRTUALENV_LOC=".heroku/venv"
+MODERN_VIRTUALENV_LOC="venv"
 LEGACY_VIRTUALENV_DIRS="bin include lib"
 LEGACY_VIRTUALENV_TRIGGER="lib/python2.7"
 
